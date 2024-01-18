@@ -1,0 +1,5 @@
+mixin figure(folder,name,caption)
+    figure 
+        if caption
+            figcaption= caption
+        img(src=`../../public/assets/images/${folder}/${name}.png` alt="example")

@@ -1,0 +1,6 @@
+mixin submenu(links)
+    nav.container-submenu
+        ul.submenu 
+            each link in links
+                -const [content,id] = link
+                li.submenu__item: a(href=`#${id}`).submenu__link= content   
