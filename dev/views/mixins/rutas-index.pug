@@ -1,0 +1,8 @@
+mixin menuIndex(rutas)
+    ul.menu
+        each ruta in rutas
+            -const [dir, value] = ruta
+            if dir === pageActive 
+                li.menu__item: a(href=`./public/views/${dir}.html`).active.menu__link= value
+            else 
+                li.menu__item: a(href=`./public/views/${dir}.html`).menu__link= value

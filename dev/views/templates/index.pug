@@ -1,0 +1,29 @@
+include ../config/config
+
+doctype html
+html(lang="es")
+    head
+    block head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet")       
+        link(rel="stylesheet" href="public/css/styles.css")
+        title Node renovado
+
+
+    body        
+        main.layout
+            div
+                .sidebar
+                    a(href="./"): img(src="public/assets/icons/nodejs.png" alt="logo").logo
+                    nav.nav
+                        include ../mixins/rutas-index                     
+                        block menuIndex
+                        +menuIndex(pages)  
+            section.container-content
+                .container-title.title-sticky        
+                    block containerTitle
+                section.content        
+                    block content
