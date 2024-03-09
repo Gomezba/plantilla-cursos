@@ -1,4 +1,14 @@
 /* Bloques */
+
+.container-logo {
+	width: 100%;
+	position: sticky;
+	top: 0;
+	margin-left: 0;
+	background-color: var(--black-dark);
+	z-index: 100;
+}
+
 .logo {
 	width: 8.5rem;
 	height: 6.25rem;
@@ -16,6 +26,13 @@
 .menu__link {
 	color: #696f72;
 	transition: color 0.2s ease-in-out;
+}
+
+.menu__link::before {
+	content: '\266B';
+	margin-right: 0.5rem;
+	font-size: 0.8rem;
+	filter: contrast(0.3);
 }
 
 .menu__link:hover {

@@ -19,7 +19,8 @@ html(lang="es")
         main.layout
             div
                 .sidebar
-                    a(href="../../public/views/index.html"): img(src="" alt="logo").logo
+                    figure.container-logo 
+                        a(href="../../"): img(src="../assets/icons/nodejs.png" alt="logo").logo
                     nav.nav
                         include ../mixins/menu-rutas                        
                         block menu
