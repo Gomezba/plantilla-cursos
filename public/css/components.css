@@ -4,7 +4,7 @@
 	width: 100%;
 	position: sticky;
 	top: 0;
-	margin-left: 0;
+	margin: 0;
 	background-color: var(--black-dark);
 	z-index: 100;
 }
